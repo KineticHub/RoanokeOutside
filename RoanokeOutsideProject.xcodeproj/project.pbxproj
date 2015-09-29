@@ -6,20 +6,425 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A17DFD11B7F3ECB00B9075C /* DragonToothTrail Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A17DFD01B7F3ECB00B9075C /* DragonToothTrail Large.png */; };
+		3A17DFD51B7F643C00B9075C /* TrailInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17DFD41B7F643C00B9075C /* TrailInfoViewController.m */; };
+		3A17DFF51B7FAF8C00B9075C /* TrailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17DFF41B7FAF8C00B9075C /* TrailMapViewController.m */; };
+		3A17DFFB1B7FB1FB00B9075C /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17DFF61B7FB1FB00B9075C /* libFMDB.a */; };
+		3A17DFFC1B7FB1FB00B9075C /* libGRMustache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17DFF71B7FB1FB00B9075C /* libGRMustache.a */; };
+		3A17DFFD1B7FB1FB00B9075C /* libJRSwizzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17DFF81B7FB1FB00B9075C /* libJRSwizzle.a */; };
+		3A17DFFF1B7FB1FB00B9075C /* libSMCalloutView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17DFFA1B7FB1FB00B9075C /* libSMCalloutView.a */; };
+		3A17E0011B7FB2AB00B9075C /* dragon_tooth_map.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3A17E0001B7FB2AB00B9075C /* dragon_tooth_map.sqlite */; };
+		3A17E0141B7FC84000B9075C /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17E0131B7FC84000B9075C /* libProj4.a */; };
+		3A17E01A1B7FDFC400B9075C /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A17E0191B7FDFC400B9075C /* SocialViewController.m */; };
+		3A17E01C1B7FE1CA00B9075C /* roanoke_outside.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3A17E01B1B7FE1CA00B9075C /* roanoke_outside.jpeg */; };
+		3A17E0221B7FE77400B9075C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A17E0211B7FE77400B9075C /* Icon.png */; };
+		3A261D861B7EB5A4002C8371 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261D851B7EB5A4002C8371 /* main.m */; };
+		3A261D911B7EB5A4002C8371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A261D901B7EB5A4002C8371 /* Images.xcassets */; };
+		3A261DA01B7EB5A4002C8371 /* RoanokeOutsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261D9F1B7EB5A4002C8371 /* RoanokeOutsideTests.m */; };
+		3A261DA71B7EB5F5002C8371 /* ROPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261D711B7C582C002C8371 /* ROPAppDelegate.m */; };
+		3A261DA81B7EB604002C8371 /* TrailMapImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261D761B7C6B38002C8371 /* TrailMapImageViewController.m */; };
+		3A261DAD1B7EBC32002C8371 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DAC1B7EBC32002C8371 /* MainMenuViewController.m */; };
+		3A261DB71B7EBD2B002C8371 /* UIBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DB01B7EBD2B002C8371 /* UIBorderLabel.m */; };
+		3A261DB81B7EBD2B002C8371 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DB21B7EBD2B002C8371 /* UIColor+FlatUI.m */; };
+		3A261DB91B7EBD2B002C8371 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DB41B7EBD2B002C8371 /* UIFont+FlatUI.m */; };
+		3A261DBA1B7EBD2B002C8371 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DB61B7EBD2B002C8371 /* UIHelper.m */; };
+		3A261DBC1B7EBEDB002C8371 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DBB1B7EBEDB002C8371 /* QuartzCore.framework */; };
+		3A261DC01B7EC55F002C8371 /* EmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DBF1B7EC55F002C8371 /* EmergencyViewController.m */; };
+		3A261DC61B7ED750002C8371 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DC51B7ED750002C8371 /* libPods.a */; };
+		3A261DC91B7ED87D002C8371 /* libFlatUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DC71B7ED87D002C8371 /* libFlatUIKit.a */; };
+		3A261DCA1B7ED87D002C8371 /* libUIAlertView+Blocks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DC81B7ED87D002C8371 /* libUIAlertView+Blocks.a */; };
+		3A261DCE1B7EFB7E002C8371 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DCD1B7EFB7E002C8371 /* ItemListViewController.m */; };
+		3A261DD11B7EFC61002C8371 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DD01B7EFC61002C8371 /* ListItem.m */; };
+		3A261DD31B7EFC84002C8371 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DD21B7EFC84002C8371 /* CoreData.framework */; };
+		3A261DD61B7F002E002C8371 /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A261DD51B7F002E002C8371 /* AddItemViewController.m */; };
+		3A261DD81B7F2903002C8371 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DD71B7F2903002C8371 /* CoreLocation.framework */; };
+		3A261DDC1B7F380D002C8371 /* libARTiledImageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DD91B7F380D002C8371 /* libARTiledImageView.a */; };
+		3A261DDD1B7F380D002C8371 /* libNAMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DDA1B7F380D002C8371 /* libNAMapKit.a */; };
+		3A261DDE1B7F380D002C8371 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A261DDB1B7F380D002C8371 /* libSDWebImage.a */; };
+		3A261DE01B7F39B0002C8371 /* DragonToothTrail.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A261DDF1B7F39B0002C8371 /* DragonToothTrail.png */; };
+		ABD0504E9A04797ABC6691E1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A53496D4242A522595B870 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A261D9A1B7EB5A4002C8371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A261D661B7C5433002C8371 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A261D7F1B7EB5A4002C8371;
+			remoteInfo = RoanokeOutside;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A17DFD01B7F3ECB00B9075C /* DragonToothTrail Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DragonToothTrail Large.png"; sourceTree = "<group>"; };
+		3A17DFD31B7F643C00B9075C /* TrailInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailInfoViewController.h; sourceTree = "<group>"; };
+		3A17DFD41B7F643C00B9075C /* TrailInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailInfoViewController.m; sourceTree = "<group>"; };
+		3A17DFF31B7FAF8C00B9075C /* TrailMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailMapViewController.h; sourceTree = "<group>"; };
+		3A17DFF41B7FAF8C00B9075C /* TrailMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailMapViewController.m; sourceTree = "<group>"; };
+		3A17DFF61B7FB1FB00B9075C /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "Pods/../build/Debug-iphoneos/libFMDB.a"; sourceTree = "<group>"; };
+		3A17DFF71B7FB1FB00B9075C /* libGRMustache.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGRMustache.a; path = "Pods/../build/Debug-iphoneos/libGRMustache.a"; sourceTree = "<group>"; };
+		3A17DFF81B7FB1FB00B9075C /* libJRSwizzle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJRSwizzle.a; path = "Pods/../build/Debug-iphoneos/libJRSwizzle.a"; sourceTree = "<group>"; };
+		3A17DFF91B7FB1FB00B9075C /* libMapbox-iOS-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libMapbox-iOS-SDK.a"; path = "Pods/../build/Debug-iphoneos/libMapbox-iOS-SDK.a"; sourceTree = "<group>"; };
+		3A17DFFA1B7FB1FB00B9075C /* libSMCalloutView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSMCalloutView.a; path = "Pods/../build/Debug-iphoneos/libSMCalloutView.a"; sourceTree = "<group>"; };
+		3A17E0001B7FB2AB00B9075C /* dragon_tooth_map.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dragon_tooth_map.sqlite; sourceTree = "<group>"; };
+		3A17E0131B7FC84000B9075C /* libProj4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libProj4.a; path = "Pods/Mapbox-iOS-SDK/Proj4/libProj4.a"; sourceTree = "<group>"; };
+		3A17E0181B7FDFC400B9075C /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		3A17E0191B7FDFC400B9075C /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		3A17E01B1B7FE1CA00B9075C /* roanoke_outside.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roanoke_outside.jpeg; sourceTree = "<group>"; };
+		3A17E0211B7FE77400B9075C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3A261D701B7C582C002C8371 /* ROPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROPAppDelegate.h; sourceTree = "<group>"; };
+		3A261D711B7C582C002C8371 /* ROPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROPAppDelegate.m; sourceTree = "<group>"; };
+		3A261D751B7C6B38002C8371 /* TrailMapImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailMapImageViewController.h; sourceTree = "<group>"; };
+		3A261D761B7C6B38002C8371 /* TrailMapImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailMapImageViewController.m; sourceTree = "<group>"; };
+		3A261D771B7C711F002C8371 /* DragonsToothpdfmap.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DragonsToothpdfmap.pdf; sourceTree = "<group>"; };
+		3A261D781B7C711F002C8371 /* Roanoke VA Dragons Tooth.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Roanoke VA Dragons Tooth.gpx"; sourceTree = "<group>"; };
+		3A261D801B7EB5A4002C8371 /* RoanokeOutside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoanokeOutside.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A261D841B7EB5A4002C8371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A261D851B7EB5A4002C8371 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A261D901B7EB5A4002C8371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A261D991B7EB5A4002C8371 /* RoanokeOutsideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoanokeOutsideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A261D9E1B7EB5A4002C8371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A261D9F1B7EB5A4002C8371 /* RoanokeOutsideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoanokeOutsideTests.m; sourceTree = "<group>"; };
+		3A261DAB1B7EBC32002C8371 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		3A261DAC1B7EBC32002C8371 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		3A261DAF1B7EBD2B002C8371 /* UIBorderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBorderLabel.h; sourceTree = "<group>"; };
+		3A261DB01B7EBD2B002C8371 /* UIBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBorderLabel.m; sourceTree = "<group>"; };
+		3A261DB11B7EBD2B002C8371 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		3A261DB21B7EBD2B002C8371 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		3A261DB31B7EBD2B002C8371 /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
+		3A261DB41B7EBD2B002C8371 /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
+		3A261DB51B7EBD2B002C8371 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHelper.h; sourceTree = "<group>"; };
+		3A261DB61B7EBD2B002C8371 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelper.m; sourceTree = "<group>"; };
+		3A261DBB1B7EBEDB002C8371 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3A261DBE1B7EC55F002C8371 /* EmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyViewController.h; sourceTree = "<group>"; };
+		3A261DBF1B7EC55F002C8371 /* EmergencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyViewController.m; sourceTree = "<group>"; };
+		3A261DC11B7ED4E5002C8371 /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/libFlatUIKit.a"; sourceTree = "<group>"; };
+		3A261DC21B7ED4E5002C8371 /* libUIAlertView+Blocks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIAlertView+Blocks.a"; path = "Pods/../build/Debug-iphoneos/libUIAlertView+Blocks.a"; sourceTree = "<group>"; };
+		3A261DC51B7ED750002C8371 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		3A261DC71B7ED87D002C8371 /* libFlatUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlatUIKit.a; path = "Pods/../build/Debug-iphoneos/libFlatUIKit.a"; sourceTree = "<group>"; };
+		3A261DC81B7ED87D002C8371 /* libUIAlertView+Blocks.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUIAlertView+Blocks.a"; path = "Pods/../build/Debug-iphoneos/libUIAlertView+Blocks.a"; sourceTree = "<group>"; };
+		3A261DCC1B7EFB7E002C8371 /* ItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListViewController.h; sourceTree = "<group>"; };
+		3A261DCD1B7EFB7E002C8371 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
+		3A261DCF1B7EFC61002C8371 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		3A261DD01B7EFC61002C8371 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		3A261DD21B7EFC84002C8371 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		3A261DD41B7F002E002C8371 /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
+		3A261DD51B7F002E002C8371 /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
+		3A261DD71B7F2903002C8371 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		3A261DD91B7F380D002C8371 /* libARTiledImageView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARTiledImageView.a; path = "Pods/../build/Debug-iphoneos/libARTiledImageView.a"; sourceTree = "<group>"; };
+		3A261DDA1B7F380D002C8371 /* libNAMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNAMapKit.a; path = "Pods/../build/Debug-iphoneos/libNAMapKit.a"; sourceTree = "<group>"; };
+		3A261DDB1B7F380D002C8371 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		3A261DDF1B7F39B0002C8371 /* DragonToothTrail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DragonToothTrail.png; sourceTree = "<group>"; };
+		C087B21577C057A6257D3B8C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F7A53496D4242A522595B870 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8334E9C00D8ADE13754F158 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A261D7D1B7EB5A4002C8371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A17E0141B7FC84000B9075C /* libProj4.a in Frameworks */,
+				3A17DFFB1B7FB1FB00B9075C /* libFMDB.a in Frameworks */,
+				3A17DFFC1B7FB1FB00B9075C /* libGRMustache.a in Frameworks */,
+				3A17DFFD1B7FB1FB00B9075C /* libJRSwizzle.a in Frameworks */,
+				3A17DFFF1B7FB1FB00B9075C /* libSMCalloutView.a in Frameworks */,
+				3A261DDC1B7F380D002C8371 /* libARTiledImageView.a in Frameworks */,
+				3A261DDD1B7F380D002C8371 /* libNAMapKit.a in Frameworks */,
+				3A261DDE1B7F380D002C8371 /* libSDWebImage.a in Frameworks */,
+				3A261DD81B7F2903002C8371 /* CoreLocation.framework in Frameworks */,
+				3A261DD31B7EFC84002C8371 /* CoreData.framework in Frameworks */,
+				3A261DC91B7ED87D002C8371 /* libFlatUIKit.a in Frameworks */,
+				3A261DCA1B7ED87D002C8371 /* libUIAlertView+Blocks.a in Frameworks */,
+				3A261DC61B7ED750002C8371 /* libPods.a in Frameworks */,
+				3A261DBC1B7EBEDB002C8371 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A261D961B7EB5A4002C8371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD0504E9A04797ABC6691E1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		3A17DFD21B7F642100B9075C /* Trail Info */ = {
+			isa = PBXGroup;
+			children = (
+				3A17DFD31B7F643C00B9075C /* TrailInfoViewController.h */,
+				3A17DFD41B7F643C00B9075C /* TrailInfoViewController.m */,
+			);
+			name = "Trail Info";
+			sourceTree = "<group>";
+		};
+		3A17E0161B7FDFA000B9075C /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				3A17E0181B7FDFC400B9075C /* SocialViewController.h */,
+				3A17E0191B7FDFC400B9075C /* SocialViewController.m */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
 		3A261D651B7C5433002C8371 = {
 			isa = PBXGroup;
 			children = (
+				3A17E0211B7FE77400B9075C /* Icon.png */,
+				3A261D721B7C6ABB002C8371 /* Controllers */,
+				3A261D6D1B7C57C7002C8371 /* Application Files */,
+				3A261D821B7EB5A4002C8371 /* RoanokeOutside */,
+				3A261D9C1B7EB5A4002C8371 /* RoanokeOutsideTests */,
+				3A261D811B7EB5A4002C8371 /* Products */,
+				A2BBBEED195662C15BA5D1DD /* Pods */,
+				AA8D5B232E906687B547A451 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
+		3A261D6D1B7C57C7002C8371 /* Application Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A261DAE1B7EBCCC002C8371 /* UI Helpers */,
+				3A261D791B7C71F3002C8371 /* Resources */,
+			);
+			name = "Application Files";
+			sourceTree = "<group>";
+		};
+		3A261D721B7C6ABB002C8371 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A17E0161B7FDFA000B9075C /* Social */,
+				3A17DFD21B7F642100B9075C /* Trail Info */,
+				3A261DCB1B7EFB64002C8371 /* Gear Checklist */,
+				3A261DBD1B7EC548002C8371 /* Emergency */,
+				3A261DAA1B7EBBC9002C8371 /* Main Menu */,
+				3A261DA91B7EBBBC002C8371 /* Trail Map */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3A261D791B7C71F3002C8371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A17E01B1B7FE1CA00B9075C /* roanoke_outside.jpeg */,
+				3A17E0001B7FB2AB00B9075C /* dragon_tooth_map.sqlite */,
+				3A17DFD01B7F3ECB00B9075C /* DragonToothTrail Large.png */,
+				3A261DDF1B7F39B0002C8371 /* DragonToothTrail.png */,
+				3A261D771B7C711F002C8371 /* DragonsToothpdfmap.pdf */,
+				3A261D781B7C711F002C8371 /* Roanoke VA Dragons Tooth.gpx */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3A261D7A1B7C71FD002C8371 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D701B7C582C002C8371 /* ROPAppDelegate.h */,
+				3A261D711B7C582C002C8371 /* ROPAppDelegate.m */,
+			);
+			name = Delegate;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3A261D811B7EB5A4002C8371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D801B7EB5A4002C8371 /* RoanokeOutside.app */,
+				3A261D991B7EB5A4002C8371 /* RoanokeOutsideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A261D821B7EB5A4002C8371 /* RoanokeOutside */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D7A1B7C71FD002C8371 /* Delegate */,
+				3A261D901B7EB5A4002C8371 /* Images.xcassets */,
+				3A261D831B7EB5A4002C8371 /* Supporting Files */,
+			);
+			path = RoanokeOutside;
+			sourceTree = "<group>";
+		};
+		3A261D831B7EB5A4002C8371 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D841B7EB5A4002C8371 /* Info.plist */,
+				3A261D851B7EB5A4002C8371 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A261D9C1B7EB5A4002C8371 /* RoanokeOutsideTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D9F1B7EB5A4002C8371 /* RoanokeOutsideTests.m */,
+				3A261D9D1B7EB5A4002C8371 /* Supporting Files */,
+			);
+			path = RoanokeOutsideTests;
+			sourceTree = "<group>";
+		};
+		3A261D9D1B7EB5A4002C8371 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D9E1B7EB5A4002C8371 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A261DA91B7EBBBC002C8371 /* Trail Map */ = {
+			isa = PBXGroup;
+			children = (
+				3A261D751B7C6B38002C8371 /* TrailMapImageViewController.h */,
+				3A261D761B7C6B38002C8371 /* TrailMapImageViewController.m */,
+				3A17DFF31B7FAF8C00B9075C /* TrailMapViewController.h */,
+				3A17DFF41B7FAF8C00B9075C /* TrailMapViewController.m */,
+			);
+			name = "Trail Map";
+			sourceTree = "<group>";
+		};
+		3A261DAA1B7EBBC9002C8371 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3A261DAB1B7EBC32002C8371 /* MainMenuViewController.h */,
+				3A261DAC1B7EBC32002C8371 /* MainMenuViewController.m */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		3A261DAE1B7EBCCC002C8371 /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A261DAF1B7EBD2B002C8371 /* UIBorderLabel.h */,
+				3A261DB01B7EBD2B002C8371 /* UIBorderLabel.m */,
+				3A261DB11B7EBD2B002C8371 /* UIColor+FlatUI.h */,
+				3A261DB21B7EBD2B002C8371 /* UIColor+FlatUI.m */,
+				3A261DB31B7EBD2B002C8371 /* UIFont+FlatUI.h */,
+				3A261DB41B7EBD2B002C8371 /* UIFont+FlatUI.m */,
+				3A261DB51B7EBD2B002C8371 /* UIHelper.h */,
+				3A261DB61B7EBD2B002C8371 /* UIHelper.m */,
+			);
+			name = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		3A261DBD1B7EC548002C8371 /* Emergency */ = {
+			isa = PBXGroup;
+			children = (
+				3A261DBE1B7EC55F002C8371 /* EmergencyViewController.h */,
+				3A261DBF1B7EC55F002C8371 /* EmergencyViewController.m */,
+			);
+			name = Emergency;
+			sourceTree = "<group>";
+		};
+		3A261DCB1B7EFB64002C8371 /* Gear Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				3A261DCC1B7EFB7E002C8371 /* ItemListViewController.h */,
+				3A261DCD1B7EFB7E002C8371 /* ItemListViewController.m */,
+				3A261DCF1B7EFC61002C8371 /* ListItem.h */,
+				3A261DD01B7EFC61002C8371 /* ListItem.m */,
+				3A261DD41B7F002E002C8371 /* AddItemViewController.h */,
+				3A261DD51B7F002E002C8371 /* AddItemViewController.m */,
+			);
+			name = "Gear Checklist";
+			sourceTree = "<group>";
+		};
+		A2BBBEED195662C15BA5D1DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8334E9C00D8ADE13754F158 /* Pods.debug.xcconfig */,
+				C087B21577C057A6257D3B8C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA8D5B232E906687B547A451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A17E0131B7FC84000B9075C /* libProj4.a */,
+				3A17DFF61B7FB1FB00B9075C /* libFMDB.a */,
+				3A17DFF71B7FB1FB00B9075C /* libGRMustache.a */,
+				3A17DFF81B7FB1FB00B9075C /* libJRSwizzle.a */,
+				3A17DFF91B7FB1FB00B9075C /* libMapbox-iOS-SDK.a */,
+				3A17DFFA1B7FB1FB00B9075C /* libSMCalloutView.a */,
+				3A261DD91B7F380D002C8371 /* libARTiledImageView.a */,
+				3A261DDA1B7F380D002C8371 /* libNAMapKit.a */,
+				3A261DDB1B7F380D002C8371 /* libSDWebImage.a */,
+				3A261DD71B7F2903002C8371 /* CoreLocation.framework */,
+				3A261DD21B7EFC84002C8371 /* CoreData.framework */,
+				3A261DC71B7ED87D002C8371 /* libFlatUIKit.a */,
+				3A261DC81B7ED87D002C8371 /* libUIAlertView+Blocks.a */,
+				3A261DC51B7ED750002C8371 /* libPods.a */,
+				3A261DC11B7ED4E5002C8371 /* libFlatUIKit.a */,
+				3A261DC21B7ED4E5002C8371 /* libUIAlertView+Blocks.a */,
+				3A261DBB1B7EBEDB002C8371 /* QuartzCore.framework */,
+				F7A53496D4242A522595B870 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A261D7F1B7EB5A4002C8371 /* RoanokeOutside */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A261DA11B7EB5A4002C8371 /* Build configuration list for PBXNativeTarget "RoanokeOutside" */;
+			buildPhases = (
+				26BA215EE276BBDB933A5264 /* Check Pods Manifest.lock */,
+				3A261D7C1B7EB5A4002C8371 /* Sources */,
+				3A261D7D1B7EB5A4002C8371 /* Frameworks */,
+				3A261D7E1B7EB5A4002C8371 /* Resources */,
+				3FCBEA290B5D1DDF9EC14842 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoanokeOutside;
+			productName = RoanokeOutside;
+			productReference = 3A261D801B7EB5A4002C8371 /* RoanokeOutside.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A261D981B7EB5A4002C8371 /* RoanokeOutsideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A261DA41B7EB5A4002C8371 /* Build configuration list for PBXNativeTarget "RoanokeOutsideTests" */;
+			buildPhases = (
+				83D1360D5847B1EF271B5B48 /* Check Pods Manifest.lock */,
+				3A261D951B7EB5A4002C8371 /* Sources */,
+				3A261D961B7EB5A4002C8371 /* Frameworks */,
+				3A261D971B7EB5A4002C8371 /* Resources */,
+				59F9ED290F3421266F6099D9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A261D9B1B7EB5A4002C8371 /* PBXTargetDependency */,
+			);
+			name = RoanokeOutsideTests;
+			productName = RoanokeOutsideTests;
+			productReference = 3A261D991B7EB5A4002C8371 /* RoanokeOutsideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A261D661B7C5433002C8371 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					3A261D7F1B7EB5A4002C8371 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3A261D981B7EB5A4002C8371 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 3A261D7F1B7EB5A4002C8371;
+					};
+				};
 			};
 			buildConfigurationList = 3A261D691B7C5433002C8371 /* Build configuration list for PBXProject "RoanokeOutsideProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -27,25 +432,362 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3A261D651B7C5433002C8371;
+			productRefGroup = 3A261D811B7EB5A4002C8371 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3A261D7F1B7EB5A4002C8371 /* RoanokeOutside */,
+				3A261D981B7EB5A4002C8371 /* RoanokeOutsideTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A261D7E1B7EB5A4002C8371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A17E0221B7FE77400B9075C /* Icon.png in Resources */,
+				3A17E0011B7FB2AB00B9075C /* dragon_tooth_map.sqlite in Resources */,
+				3A261DE01B7F39B0002C8371 /* DragonToothTrail.png in Resources */,
+				3A17DFD11B7F3ECB00B9075C /* DragonToothTrail Large.png in Resources */,
+				3A261D911B7EB5A4002C8371 /* Images.xcassets in Resources */,
+				3A17E01C1B7FE1CA00B9075C /* roanoke_outside.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A261D971B7EB5A4002C8371 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26BA215EE276BBDB933A5264 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FCBEA290B5D1DDF9EC14842 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59F9ED290F3421266F6099D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D1360D5847B1EF271B5B48 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A261D7C1B7EB5A4002C8371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A261DAD1B7EBC32002C8371 /* MainMenuViewController.m in Sources */,
+				3A261DD61B7F002E002C8371 /* AddItemViewController.m in Sources */,
+				3A261DC01B7EC55F002C8371 /* EmergencyViewController.m in Sources */,
+				3A261DB91B7EBD2B002C8371 /* UIFont+FlatUI.m in Sources */,
+				3A261DA81B7EB604002C8371 /* TrailMapImageViewController.m in Sources */,
+				3A261DBA1B7EBD2B002C8371 /* UIHelper.m in Sources */,
+				3A17DFF51B7FAF8C00B9075C /* TrailMapViewController.m in Sources */,
+				3A261DCE1B7EFB7E002C8371 /* ItemListViewController.m in Sources */,
+				3A261DB81B7EBD2B002C8371 /* UIColor+FlatUI.m in Sources */,
+				3A17DFD51B7F643C00B9075C /* TrailInfoViewController.m in Sources */,
+				3A261DA71B7EB5F5002C8371 /* ROPAppDelegate.m in Sources */,
+				3A261D861B7EB5A4002C8371 /* main.m in Sources */,
+				3A17E01A1B7FDFC400B9075C /* SocialViewController.m in Sources */,
+				3A261DD11B7EFC61002C8371 /* ListItem.m in Sources */,
+				3A261DB71B7EBD2B002C8371 /* UIBorderLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A261D951B7EB5A4002C8371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A261DA01B7EB5A4002C8371 /* RoanokeOutsideTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A261D9B1B7EB5A4002C8371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A261D7F1B7EB5A4002C8371 /* RoanokeOutside */;
+			targetProxy = 3A261D9A1B7EB5A4002C8371 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A261D6A1B7C5433002C8371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv6 armv7";
 			};
 			name = Debug;
 		};
 		3A261D6B1B7C5433002C8371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv6 armv7";
+			};
+			name = Release;
+		};
+		3A261DA21B7EB5A4002C8371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8334E9C00D8ADE13754F158 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoanokeOutside/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/Mapbox-iOS-SDK/Proj4",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A261DA31B7EB5A4002C8371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C087B21577C057A6257D3B8C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoanokeOutside/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Pods/Mapbox-iOS-SDK/Proj4",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A261DA51B7EB5A4002C8371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8334E9C00D8ADE13754F158 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoanokeOutsideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoanokeOutside.app/RoanokeOutside";
+			};
+			name = Debug;
+		};
+		3A261DA61B7EB5A4002C8371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C087B21577C057A6257D3B8C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RoanokeOutsideTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoanokeOutside.app/RoanokeOutside";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -57,6 +799,24 @@
 			buildConfigurations = (
 				3A261D6A1B7C5433002C8371 /* Debug */,
 				3A261D6B1B7C5433002C8371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A261DA11B7EB5A4002C8371 /* Build configuration list for PBXNativeTarget "RoanokeOutside" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A261DA21B7EB5A4002C8371 /* Debug */,
+				3A261DA31B7EB5A4002C8371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A261DA41B7EB5A4002C8371 /* Build configuration list for PBXNativeTarget "RoanokeOutsideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A261DA51B7EB5A4002C8371 /* Debug */,
+				3A261DA61B7EB5A4002C8371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
